@@ -9,18 +9,17 @@
     "notify"
   ],
   "version": "1.0.4",
-  "homepage": "https://simple-notify.github.io/simple-notify/",
-  "repository": "https://github.com/simple-notify/simple-notify",
-  "author": "Doğukan Çavuş",
+  "homepage": "https://github.com/jamielife/simple-notify/",
+  "repository": "https://github.com/jamielife/simple-notify",
+  "author": "Doğukan Çavuş & jamie Taylor",
   "license": "MIT",
-  "main": "./dist/simple-notify.min.js",
+  "main": "./dist/simple-notify2.min.js",
   "module": "./dist/simple-notify.mjs",
   "types": "./dist/simple-notify.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "concurrently \"tsup --watch\" \"node scripts/copy-dist.js\"",
     "open": "browser-sync start --server 'website' --files 'src/**/*.*', 'website/**/*.*'",
     "build": "tsup",
     "prepublishOnly": "pnpm i && pnpm build",
@@ -42,7 +41,6 @@
     "@typescript-eslint/parser": "^7.0.1",
     "browser-sync": "^3.0.2",
     "chokidar": "^3.6.0",
-    "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "gh-pages": "^6.1.1",
